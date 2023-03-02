@@ -17,6 +17,7 @@ const ProductPage = () => {
   };
 
   useEffect(() => {
+    document.title = 'Onlien Shoping App';
     fetchProducts();
   }, []);
 

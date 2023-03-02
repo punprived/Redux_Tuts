@@ -22,6 +22,7 @@ const ProductDetails = () => {
 
   useEffect(() => {
     if (productId && productId !== "") fetchProductDetail(productId);
+    document.title = `Product - ${title}`;
     return () => {
       dispatch(removeSelectedProduct());
     };
